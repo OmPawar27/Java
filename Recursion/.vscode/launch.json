@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Program15",
+            "request": "launch",
+            "mainClass": "Program15",
+            "projectName": "Recursion_bb953472"
+        },
+        {
+            "type": "java",
+            "name": "Program14",
+            "request": "launch",
+            "mainClass": "Program14",
+            "projectName": "Recursion_bb953472"
+        },
+        {
+            "type": "java",
             "name": "Program13",
             "request": "launch",
             "mainClass": "Program13",
