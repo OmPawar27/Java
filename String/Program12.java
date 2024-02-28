@@ -1,3 +1,5 @@
+//  12. Write a Java program to find the minimum window in a string containing all characters of another string.
+
 public class Program12 {
     public static void main(String[] args) {
         String str = "ZZADOBECODEBANC";
