@@ -10,11 +10,8 @@ public class Program3 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number of steps you want to rotate your array");
         int k = sc.nextInt();
-        int t = k;
 
         int rotate[] = new int[k];
-        int count = 0;
-        int count2 = 0;
 
         int z = (arr.length) - k;
         for (int i = 0; i < arr.length; i++) {
@@ -26,5 +23,6 @@ public class Program3 {
             }
         }
         System.out.println(Arrays.toString(arr));
+        sc.close();
     }
 }
