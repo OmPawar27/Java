@@ -16,24 +16,14 @@ public class Program3 {
         int count = 0;
         int count2 = 0;
 
-        /*for (int i = arr.length - 1, j = 0, z = (arr.length - 1) - k; i >= k - arr.length; i--, j++, z--,k++) {
-            if (j == t)
-                break;
-            rotate[j] = arr[i];
-            arr[i] = arr[z];
-            arr[k] = arr[j];
-            arr[j] = rotate[j];
-        }
-        System.out.println(Arrays.toString(arr));*/
         int z = (arr.length) - k;
-        for(int i = 0; i<arr.length; i++){
-            if(z < arr.length){
+        for (int i = 0; i < arr.length; i++) {
+            if (z < arr.length) {
                 rotate[i] = arr[z];
                 z++;
-            }else{
-                rotate[i] = arr[(i-k)];
+            } else {
+                rotate[i] = arr[(i - k)];
             }
-     
         }
         System.out.println(Arrays.toString(arr));
     }
