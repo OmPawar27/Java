@@ -1,29 +1,33 @@
-/*
- * Given and array of DISTINCT elements.
- * Find the missing element in the array
- */
+// Storing userdefined objects in ArrayList
+
+import java.util.*;
+
+class Team{
+    String name;
+    int jerNo;
+
+    Team(String name, int jerNo){
+        this.name = name;
+        this.jerNo = jerNo;
+    }
+
+    public String toString(){   // This method is overridden from Object class
+        return jerNo + ":" + name;
+    }
+}
 
 public class Program4 {
     public static void main(String[] args) {
-        int arr[] = {1,4,3,5};
+        
+        ArrayList al = new ArrayList<>();
 
-        int min = Integer.MAX_VALUE;
-        int max = Integer.MIN_VALUE;
+        al.add(new Team("Virat",18));
+        al.add(new Team("Rohit",45));
+        al.add(new Team("MsDhoni",7));
 
-        int sum1 = 0;
-        for(int i = 0; i<arr.length; i++){
-            if(arr[i] > max)
-                max = arr[i];
-            if(arr[i] < min)
-                min = arr[i];
-            sum1 += arr[i];
-        }
-
-        int sum2 = 0;
-        for(int i = min; i<=max; i++){
-            sum2 += i;
-        }
-
-        System.out.println("The missing element is:" + (sum2-sum1));
+        // Whenever we print objects from collection 
+        // toString method is called 
+        // if it is not defined in userdefined class it will print address of each object
+        System.out.println(al);
     }
 }
